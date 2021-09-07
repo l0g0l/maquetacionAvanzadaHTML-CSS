@@ -501,7 +501,7 @@ body {
   margin-bottom: 15px;
 }
 .articles article {
-  width: 100%;
+  width: 97%;
   height: auto;
   border: 1px solid #ccc;
   margin: 40px auto;
@@ -598,7 +598,6 @@ body {
 /*FOOTER*/
 
 .footer {
-  display: block;
   width: 100%;
   height: 470px;
   background-color: #000;
@@ -606,7 +605,7 @@ body {
   overflow: hidden;
 }
 
-.footer .wrap  div {
+.footer > .wrap > div {
   float: left;
   width: 320px;
   height: 370px;
@@ -617,7 +616,6 @@ body {
 }
 
 .footer a {
-  display: block;
   height: 40px;
   text-decoration: none;
   color:#37bcf9;
