@@ -318,6 +318,7 @@ body {
   font-family: trebuchetMS;
   float: right;
   margin: 20px;
+  margin-top: 20px;
 }
 .aside h3 {
   display: block;
