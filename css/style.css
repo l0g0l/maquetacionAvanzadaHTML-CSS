@@ -71,7 +71,6 @@ body {
 .logo:hover {
   background-color: #fff;
   color: #000;
-
 }
 .logo .gear {
   display: block;
@@ -89,27 +88,26 @@ body {
   from {
     transform: rotateZ(0deg);
   }
-  to{
+  to {
     transform: rotateZ(360deg);
   }
 }
 /*Animación en el hover de arriba-abajo, translate eje Y*/
 .logo:hover .gear {
   animation: fromBellow 700ms linear;
-
 }
 
-@keyframes fromBellow { /*al logo hay que ponerle un overflow hidden para que no se vea la animación por fuera*/
+@keyframes fromBellow {
+  /*al logo hay que ponerle un overflow hidden para que no se vea la animación por fuera*/
   0% {
     transform: translateY(0%); /*que empiece en el 0%*/
   }
   50% {
-    transform: translateY(200%);/*baje hasta que no se vea*/
+    transform: translateY(200%); /*baje hasta que no se vea*/
   }
   100% {
-    transform: translateY(0%)/*vuelva a su posición original*/
+    transform: translateY(0%); /*vuelva a su posición original*/
   }
-  
 }
 .logo h3 {
   display: block;
@@ -118,23 +116,22 @@ body {
   margin-top: 5px;
   transition: all 300ms;
   margin-right: 65px;
-
 }
 /*Animación en el hover de dcha-izq, translate eje Z */
 .logo:hover h3 {
   animation: fromRight 300ms linear;
-
 }
-@keyframes fromRight { /*al logo hay que ponerle un overflow hidden para que no se vea la animación por fuera*/
+@keyframes fromRight {
+  /*al logo hay que ponerle un overflow hidden para que no se vea la animación por fuera*/
   from {
-    transform: translateX(200%);  /*para que salga completamente hacia la derecha*/
+    transform: translateX(
+      200%
+    ); /*para que salga completamente hacia la derecha*/
   }
-  to{
+  to {
     transform: translateX(0%);
   }
-  
 }
-
 
 /*NAV*/
 
@@ -177,14 +174,13 @@ body {
   overflow: hidden;
   animation: backBanner 10s linear;
 }
-@keyframes backBanner{
+@keyframes backBanner {
   0% {
     background-position: 0 0;
   }
   100% {
-    background-position: -260px -200px; 
+    background-position: -260px -200px;
   }
-
 }
 .banner h1 {
   display: block;
@@ -201,21 +197,21 @@ body {
 }
 @keyframes showText {
   0% {
-    transform: translateX(-600%) scale(4,4); /*se oculte hacia un lado, hay que ponerle al banner overflow hidden, con el scale aumentamos el tamaño de la letra 5 veces tanto horizontal como vertical*/
+    transform: translateX(-600%) scale(4, 4); /*se oculte hacia un lado, hay que ponerle al banner overflow hidden, con el scale aumentamos el tamaño de la letra 5 veces tanto horizontal como vertical*/
     opacity: 1;
   }
   50% {
-    transform: translateX(600%) scale(4,4); /*de -600 pasa a 600, es decir va de un lado a otro*/
+    transform: translateX(600%) scale(4, 4); /*de -600 pasa a 600, es decir va de un lado a otro*/
     opacity: 1;
   }
   75% {
-    transform: translateX(-600%) scale(5,5); 
-    text-shadow: none;/*el texto se va a ocultar*/
+    transform: translateX(-600%) scale(5, 5);
+    text-shadow: none; /*el texto se va a ocultar*/
     color: transparent;
     opacity: 0; /*el texto se va a difuminar completamente*/
   }
   100% {
-    transform: translateX(0%) scale(1,1); /*vuelve a su tamaño normal*/
+    transform: translateX(0%) scale(1, 1); /*vuelve a su tamaño normal*/
     text-shadow: 2px 2px 1px black;
     color: #fff;
     opacity: 1;
@@ -239,7 +235,6 @@ body {
 }
 .card:hover {
   background-color: #000;
-
 }
 .card .icon {
   display: block;
@@ -253,12 +248,14 @@ body {
 }
 .card:hover .icon {
   font-size: 60px;
-  color:#37bcf9;
+  color: #37bcf9;
   animation: showIcon 300ms linear;
 }
 @keyframes showIcon {
   from {
-    transform: translatey(-200%); /*el icono se va fuera de arriba a abajo. En la card overflow hidden*/
+    transform: translatey(
+      -200%
+    ); /*el icono se va fuera de arriba a abajo. En la card overflow hidden*/
   }
   to {
     transform: translateY(0%); /*vuelve al punto original*/
@@ -306,7 +303,6 @@ body {
   }
   to {
     transform: translateX(0%);
-   
   }
 }
 
@@ -460,7 +456,7 @@ body {
   display: block;
   position: absolute;
   height: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   text-shadow: 0 0 1px #ccc;
@@ -475,7 +471,7 @@ body {
   opacity: 0;
   transition: all 400ms;
 }
-.social div:hover .overlay{
+.social div:hover .overlay {
   opacity: 1;
   transform: translateX(0%);
 }
@@ -551,7 +547,7 @@ body {
   line-height: 100px;
   margin-top: 60px;
   text-align: center;
-  font-family:bebasNeue;
+  font-family: bebasNeue;
   background-color: #fff;
   transition: all 1s;
 }
@@ -577,23 +573,20 @@ body {
   }
   100% {
     border: 10px solid #37bcf9;
-
   }
 }
 .blog a {
   display: block;
-  font-family:bebasNeue;
+  font-family: bebasNeue;
   font-size: 40px;
-  letter-spacing:3px;
+  letter-spacing: 3px;
   text-decoration: none;
-  color: #00538c; 
+  color: #00538c;
   transition: all 1s;
 }
 .blog:hover a {
- text-shadow: 1px 1px 1px black;
- color: #fff;
-
-  
+  text-shadow: 1px 1px 1px black;
+  color: #fff;
 }
 
 /*FOOTER*/
@@ -619,12 +612,12 @@ body {
 .footer a {
   height: 40px;
   text-decoration: none;
-  color:#37bcf9;
+  color: #37bcf9;
   transition: all 300ms;
 }
 .footer h5 {
   display: block;
-  background:url('../img/pxgray.png'), white;
+  background: url("../img/pxgray.png"), white;
   height: 50px;
   letter-spacing: 2px;
   text-align: center;
@@ -646,28 +639,28 @@ body {
   padding: 5px;
   border-bottom: 1px solid #ccc;
 }
-footer ul li a{
+footer ul li a {
   display: block;
   height: 40px;
   transition: all 300ms;
 }
 
-footer ul li:hover a{
+footer ul li:hover a {
   padding-left: 30px;
   color: white;
   width: 100%;
 }
-.footer iframe  {
+.footer iframe {
   width: 100%;
   height: 300px;
   margin-top: 10px;
   border-radius: 5px;
   border: 5px solid white;
-  box-shadow: 0 0 5px gray ;
+  box-shadow: 0 0 5px gray;
 }
 .footer img {
   margin-bottom: 15px;
 }
 .footer .browsers img {
-  width: 45px; 
-} 
+  width: 45px;
+}

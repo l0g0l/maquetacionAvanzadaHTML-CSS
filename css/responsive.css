@@ -180,28 +180,27 @@
   }
 }
 @media (max-width: 475px) {
-    .logo {
-        float: right;
-        width: 160px;
+  .logo {
+    float: right;
+    width: 160px;
+  }
+  .logo h3 {
+    margin-right: 22px;
+  }
 
-    }
-    .logo h3 {
-        margin-right:22px ;
-    }
-  
   .menu {
     width: 100%;
     margin: 0 auto;
     height: 64px;
   }
   .menu ul li {
-      width: 100%;
-      line-height: 52px;
+    width: 100%;
+    line-height: 52px;
   }
-  .menu ul li:hover  a{
+  .menu ul li:hover a {
     color: #37bcf9;
-    transform: scale(1,1);
-}
+    transform: scale(1, 1);
+  }
   .header {
     width: 100%;
     height: 275px;
